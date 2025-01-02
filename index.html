@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <!-- begin SEO -->
+    <title>Rakesh Thakur</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Your Name / Site Title">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <meta property="og:title" content="Rakesh Thakur">
+    <link rel="canonical" href="./">
+    <meta property="og:url" content="./">
+    <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Rakesh Thakur",
+                "url": ".",
+                "sameAs": null
+            }</script>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./assets/css/academicons.css" />
+    <!-- Support for MatJax -->
+    <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- end custom head snippets -->
+    <style>
+        .album {
+            display: flex;
+            justify-content: center;
+            z-index: -10;
+            width: 100%;
+        }
+
+        .carousel {
+            position: relative;
+            width: 90%;
+            z-index: -10;
+            max-width: 800px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-track {
+            z-index: -10;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            z-index: -10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-slide img {
+            max-width: 100%;
+            z-index: -10;
+            max-height: 450px;
+            object-fit: contain;
+            z-index: inherit;
+        }
+
+        /* Pagination Dots */
+        .carousel-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .dot.active {
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-slide img {
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./script.js" defer></script>
+    <div class="slider-container">
+        <input type="checkbox" id="slider" class="slider-input">
+        <label for="slider" class="slider-label"></label>
+    </div>
+
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav"> <button>
+                        <div class="navicon"></div>
+                    </button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg">
+                            <a href="./">Rakesh Thakur</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./about-me/">About Me</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./certification/">Certification</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./skills/">Skills</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./projects/">Projects</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./experience/">Experience</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./extra-cariculum/">Extra-Cariculum</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="./gallery/">Gallery</a>
+                        </li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="main" role="main">
+        <div class="sidebar sticky">
+            <div itemscope itemtype="http://schema.org/Person">
+                <div class="author__avatar">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFCe6_fweJ4hA/profile-displayphoto-shrink_100_100/B4DZPy5_RnHUAU-/0/1734947109319?e=1741219200&v=beta&t=w2Svuh5KhuI5Se-n-v4-0L4qRjVtarVrZ9KK4mBPtG8"
+                        class="author__avatar" alt="Dr. Rakesh Thakur">
+                </div>
+                <div class="author__content">
+                    <h3 class="author__name">Mr. Rakesh Thakur</h3>
+                    <!-- <p class="author__bio">Expert in forensic science, specializing in toxicology, nanotechnology, and
+                        fingerprint analysis with 170+ articles.</p> -->
+                    <p class="author__bio">Assistant Professor, Dept. of Cloud Computing, Chandigarh University, Expert
+                        in AI/ML, specializing in team lead</p>
+                </div>
+                <div class="author__urls-wrapper">
+                    <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <li class="author__desktop">
+                            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>
+                            Chandigarh University
+                        </li>
+                        <li style="display: flex;">
+                            <a href="mailto:rakesh.thakur@iitgn.ac.in">
+                                <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> Email</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rakesh-thakur-aug19/">
+                                <i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/RakeshthakurIITian">
+                                <i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rakeshthakur35016/">
+                                <i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <!-- Font Awesome and Academicons icons / Academic websites -->
+                        <!-- <li>
+                            <a href="https://scholar.google.co.in/citations?user=JR9Y0SUAAAAJ&hl=en">
+                                <i class="ai ai-google-scholar icon-pad-right"></i>
+                                Google Scholar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://orcid.org/0000-0002-7361-3786">
+                                <i class="ai ai-orcid ai-fw icon-pad-right"></i>
+                                ORCID
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=57219964786">
+                                <i class="ai ai-pubmed ai-fw icon-pad-right"></i>
+                                SCOPUS
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+            <meta itemprop="headline" content="Article Published on Website / Newspaper">
+            <div class="page__inner-wrap">
+
+                <div class="album">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="./images/pic1.jpeg" alt="Slide 1" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic2.jpg" alt="Slide 2" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic3.jpeg" alt="Slide 3" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic4.jpeg" alt="Slide 4" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic5.jpeg" alt="Slide 5" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic11.jpeg" alt="Slide 6" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic7.jpeg" alt="Slide 7" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic8.jpeg" alt="Slide 8" style="width: 100%;">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="./images/pic10.jpeg" alt="Slide 9" style="width: 100%;">
+                            </div>
+                        </div>
+
+                        <div class="carousel-dots">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <header>
+                    <h1 class="page__title" itemprop="headline">Education</h1>
+                </header>
+                <section class="page__content" itemprop="text">
+                    <ul>
+                        <li>
+                            <h3>Master of Technology in Computer Science Engineering</h3>
+                            <p><i class="fa fa-location-dot"></i> Indian Institute of Technology, Gandhinagar, Gujarat
+                            </p>
+                            <p><i class="fa fa-calendar"></i> Duration: 06/2022 - 05/2024</p>
+                            <!-- <p>CGPA: <b>8.0</b>/10</p> -->
+                        </li>
+                        <li>
+                            <h3>Master of Technology in Biological Engineering</h3>
+                            <p><i class="fa fa-location-dot"></i> Indian Institute of Technology, Gandhinagar, Gujarat
+                            </p>
+                            <p><i class="fa fa-calendar"></i> Duration: 06/2020 - 05/2022</p>
+                            <!-- <p>CGPA: <b>7.17</b>/10</p> -->
+                        </li>
+                        <li>
+                            <h3>Bachelor of Technology</h3>
+                            <p><i class="fa fa-location-dot"></i> Lovely Professional University, Jalandhar, Punjab</p>
+                            <p><i class="fa fa-calendar"></i> Duration: 06/2016 - 05/2020</p>
+                            <!-- <p>CGPA: <b>8.79</b>/10</p> -->
+                        </li>
+                    </ul>
+                    <div class="ralated-image">
+                        <div class="card">
+                            <img src="./gif/gif1.png" alt="">
+                            <div class="info">
+                                Biotech + NLP, ML , AI: Applying language models to analyze ,and interpret biological
+                                datasets.
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./gif/gif2.gif" alt="">
+                            <div class="info">
+                                AI (Artificial Intelligence): Simulating human intelligence in machines for tasks like
+                                problem-solving and decision-making.
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./gif/gif3.gif" alt="">
+                            <div class="info">
+                                LLMs (Large Language Models): Models like GPTu process and generate human-like
+                                text using deep learning techniques. They can be used for tasks like text summarization,
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="page__meta"></footer>
+            </div>
+        </article>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(track.children);
+            const dotsNav = document.querySelector('.carousel-dots');
+            const dots = Array.from(dotsNav.children);
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            // Adjust the track position based on the current slide
+            function updateSlidePosition() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                updateDots();
+            }
+
+            // Update active dot
+            function updateDots() {
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            // Move to the next slide
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlidePosition();
+            }
+
+            // Start the auto-slide interval
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 3000);
+            }
+
+            // Stop the auto-slide interval
+            function stopAutoSlide() {
+                console.log('Stopping auto-slide...');
+                clearInterval(autoSlideInterval);
+            }
+
+            // Start the auto-slide when the page loads
+            startAutoSlide();
+
+            // Pause auto-slide on mouse enter (hover)
+            track.addEventListener('mouseenter', () => {
+                console.log('Mouse entered: Pausing auto-slide');
+                stopAutoSlide();
+            });
+
+            // Resume auto-slide on mouse leave
+            track.addEventListener('mouseleave', () => {
+                console.log('Mouse left: Resuming auto-slide');
+                startAutoSlide();
+            });
+
+            // Allow users to click on dots to navigate to specific slides
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    console.log(`Dot ${index + 1} clicked`);
+                    currentIndex = index;
+                    updateSlidePosition();
+                    stopAutoSlide(); // Optional: Stop auto-slide on manual navigation
+                });
+            });
+        });
+
+    </script>
+    <script src="./assets/js/main.min.js"></script>
+</body>
+
+</html>

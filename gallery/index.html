@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8"> <!-- begin SEO -->
+    <title>Extra-Cariculum - Rakesh Thakur</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Mahipal Singh Sankhla">
+    <meta property="og:title" content="Markdown">
+    <link rel="canonical" href="../markdown/">
+    <meta property="og:url" content="../markdown/">
+    <script
+        type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Mahipal Singh Sankhla Books", "url" : ".", "sameAs" : null } </script>
+    <!-- end SEO -->
+    <link href="../feed.xml" type="application/atom+xml" rel="alternate" title="Mahipal Singh Sankhla Books">
+    <!-- http://t.co/dKP3o1e -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script>
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <meta http-equiv="cleartype" content="on"> <!-- start custom head snippets -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+    <link rel="icon" type="image/png" href="../images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+    <link rel="manifest" href="../images/manifest.json?v=M44lzPylqQ">
+    <link rel="mask-icon" href="../images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+    <link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="../images/mstile-144x144.png?v=M44lzPylqQ">
+    <meta name="msapplication-config" content="../images/browserconfig.xml?v=M44lzPylqQ">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="../assets/css/academicons.css" />
+    <!-- Support for MatJax -->
+    <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- end custom head snippets -->
+</head>
+
+<style>
+
+    /* Gallery Styling */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal Styling */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 20vh;
+        left: 15vh;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        /* Ensure overflow does not happen */
+    }
+
+    .modal img {
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit:contain ;
+        border-radius: 8px;
+    }
+
+    /* Close Button */
+    .modal .close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: rgb(242, 242, 242);
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    /* Image Info */
+    .image-info {
+        color: white;
+        font-size: 18px;
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    @media (max-width: 550px){
+        .modal{
+            width: 110%;
+        }
+    }
+</style>
+
+
+
+
+<body>
+    <script src="../script.js" defer></script>
+    <div class="slider-container">
+        <input type="checkbox" id="slider" class="slider-input">
+        <label for="slider" class="slider-label"></label>
+    </div>
+    <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+    <div class="masthead">
+        <div class="masthead__inner-wrap">
+            <div class="masthead__menu">
+                <nav id="site-nav" class="greedy-nav"> <button>
+                        <div class="navicon"></div>
+                    </button>
+                    <ul class="visible-links">
+                        <li class="masthead__menu-item masthead__menu-item--lg">
+                            <a href="../">Rakesh Thakur</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../about-me/">About Me</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../certification/">Certification</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../skills/">Skills</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../projects/">Projects</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../experience/">Experience</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../extra-cariculum/">Extra-Cariculum</a>
+                        </li>
+                        <li class="masthead__menu-item">
+                            <a href="../gallery/">Gallery</a>
+                        </li>
+                    </ul>
+                    <ul class="hidden-links hidden"></ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div id="main" role="main">
+        <div class="sidebar sticky">
+            <div itemscope itemtype="http://schema.org/Person">
+                <div class="author__avatar">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFVj5BjUtxEwQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707371031873?e=1738195200&v=beta&t=LQSYbw76Gv88ZgbmbHDVMK2HwNCsHPqgpePB3yuAyyQ"
+                        class="author__avatar" alt="Dr. Mahipal Singh Sankhla">
+                </div>
+                <div class="author__content">
+                    <h3 class="author__name">Dr. Rakesh Thakur</h3>
+                    <!-- <p class="author__bio">Expert in forensic science, specializing in toxicology, nanotechnology, and
+            fingerprint analysis with 170+ articles.</p> -->
+                    <p class="author__bio">Assistant Professor, Dept. of Cloud Computing, Chandigarh University, Expert
+                        in AI/ML, specializing in team lead</p>
+                </div>
+                <div class="author__urls-wrapper">
+                    <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <li class="author__desktop">
+                            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>
+                            Chandigarh University
+                        </li>
+                        <li style="display: flex;">
+                            <a href="mailto:rakesh.thakur@iitgn.ac.in">
+                                <i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i> Email</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/rakesh-thakur-aug19/">
+                                <i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/RakeshthakurIITian">
+                                <i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/rakeshthakur35016/">
+                                <i class="fab fa-fw fa-instagram icon-pad-right" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <!-- Font Awesome and Academicons icons / Academic websites -->
+                        <!-- <li>
+                            <a href="https://scholar.google.co.in/citations?user=JR9Y0SUAAAAJ&hl=en">
+                                <i class="ai ai-google-scholar icon-pad-right"></i>
+                                Google Scholar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://orcid.org/0000-0002-7361-3786">
+                                <i class="ai ai-orcid ai-fw icon-pad-right"></i>
+                                ORCID
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.scopus.com/authid/detail.uri?authorId=57219964786">
+                                <i class="ai ai-pubmed ai-fw icon-pad-right"></i>
+                                SCOPUS
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="archive">
+            <h1 id="extra-cariculum">Gallery</h1>
+            <div id="gallery-container" class="gallery"></div>
+
+            <!-- Modal -->
+            <div class="modal" id="image-modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="image-modal-content">
+            </div>
+
+        </div>
+    </div>
+    <script src="../assets/js/main.min.js"></script>
+</body>
+
+</html>
+
+<script>
+    const imagesFolder = '../images/'; // Folder containing the images
+    const imageList = [
+        'pic1.jpeg',
+        'pic2.jpg',
+        'pic3.jpeg',
+        'pic4.jpeg',
+        'pic5.jpeg',
+        'pic6.jpeg',
+        'pic7.jpeg',
+        'pic8.jpeg',
+        'pic9.jpeg',
+        'pic10.jpeg',
+        'pic11.jpeg',
+        'pic12.jpeg',
+        'pic13.jpeg',
+        'pic14.jpeg',
+        'pic15.jpeg',
+        'pic16.jpeg',
+        'pic17.jpeg',
+        'pic18.jpeg'
+        // Add image file names here
+    ];
+
+    const galleryContainer = document.getElementById('gallery-container');
+    imageList.forEach(imageName => {
+        const galleryItem = document.createElement('div');
+        galleryItem.classList.add('gallery-item');
+        const img = document.createElement('img');
+        img.src = imagesFolder + imageName;
+        img.alt = imageName;
+        galleryItem.appendChild(img);
+        galleryContainer.appendChild(galleryItem);
+    });
+
+    // Modal Functionality
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("image-modal-content");
+    const captionText = document.getElementById("caption");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    document.querySelectorAll('.gallery img').forEach(image => {
+        image.addEventListener('click', function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        });
+    });
+
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+</script>
